@@ -3,11 +3,11 @@
 Является пакетом для _Laravel 5.2_, использует _Twig 2_. Важно учесть, что _Twig 2_ (на момент написания данной инструкции) требует _PHP 7_.
  
 Для установки пакета необходимо в контексте основного приложения:
-- добавить в файл _composer.json_ основного приложения в раздел _require_ запись `"termiyanc/moactiontest": "^1.0"`, затем выполнить команду `composer update` либо выполнить команду `composer require termiyanc/moactiontest` в контексте основного приложения.
-- для подключения пакета к основному приложению в файле конфигурации _app.php_ основного приложения в разделе _providers_ прописать значение `Termiyanc\Moactiontest\MoactiontestServiceProvider::class`.
+- добавить в файл _composer.json_ в раздел _require_ запись `"termiyanc/moactiontest": "^1.0"` и выполнить команду `composer update` либо выполнить команду `composer require termiyanc/moactiontest`,
+- в файле конфигурации _app.php_ в разделе _providers_ прописать значение `Termiyanc\Moactiontest\MoactiontestServiceProvider::class`.
 
 После установки пакета необходимо в контексте основного приложения: 
-- выполнить команду `php artisan vendor:publish --provider=Termiyanc\Moactiontest\MoactiontestServiceProvider --force`
+- выполнить команду `php artisan vendor:publish --provider=Termiyanc\Moactiontest\MoactiontestServiceProvider --force`,
 - выполнить команду `composer dumpautoload`,
 - выполнить миграции пакета при помощи команды `php artisan migrate --path=database/termiyanc/moactiontest/migrations`.
 
