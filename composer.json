@@ -1,0 +1,19 @@
+{
+    "name": "termiyanc/moactiontest",
+    "description": "Интерфейс для работы с подписками пользователя",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Eduard",
+            "email": "eduard.termiyanc@mail.ru"
+        }
+    ],
+    "require": {
+        "twig/twig": "2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Termiyanc\\Moactiontest\\": "src/"
+        }
+    }
+}

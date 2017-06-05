@@ -1,0 +1,18 @@
+{% extends "common.twig" %}
+
+{% block title %}Управление подписками пользователя{% endblock %}
+{% block content %}
+    {% if data.user %}
+        <h3>Управление подписками пользователя <span class="bold">{{ data.user.name }}</span></h3>
+        {% for subscription in data.subscriptions %}
+            <label class="checkbox"><input class="subscription"
+                                           type="checkbox"
+                                           value="{{ subscription.id }}"
+                                           {% if subscription.id in data.user.subscriptionsToUser %} checked {% endif %}
+                                           data-user_id="{{ data.user.id }}"
+                                           data-subscription_id="{{ subscription.id }}">{{ subscription.name }}</label>
+        {% endfor %}
+    {% else %}
+        Пользователь не определен.
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block head %}
+        <link rel="stylesheet" href="{{ assets }}/css/style.css" />
+        <script src="{{ assets }}/js/jquery-3.2.1.min.js"></script>
+        <script src="{{ assets }}/js/scripts.js"></script>
+        <title>{% block title %}{% endblock %}</title>
+    {% endblock %}
+</head>
+<body>
+{% block content %}{% endblock %}
+</body>
+</html>

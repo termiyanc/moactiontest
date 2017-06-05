@@ -1,0 +1,19 @@
+*{
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+label.checkbox{
+    padding: 0 5px;
+}
+
+label.checkbox:hover{
+    background: #f0f0f0;
+}
+
+label.checkbox input{
+    margin-left: 0;
+}
