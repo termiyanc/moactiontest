@@ -1,6 +1,4 @@
-<?php
-
-namespace Termiyanc\Moactiontest;
+<?php namespace Termiyanc\Moactiontest;
 
 use Illuminate\Support\ServiceProvider;
 
