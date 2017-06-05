@@ -4,7 +4,7 @@
  
 Для установки пакета необходимо:
 - добавить в файл _composer.json_ основного приложения в раздел _require_ запись `"termiyanc/moactiontest": "1.0.0"`, затем выполнить команду `composer update` либо выполнить команду `composer require termiyanc/moactiontest:1.0.0` в контексте основного приложения.
-- для подключения пакета к основному приложению необходимо в файле конфигурации _app.php_ основного приложения в разделе _providers_ прописать значение `Termiyanc\Moactiontest\MoactiontestServiceProvider::class`.
+- для подключения пакета к основному приложению в файле конфигурации _app.php_ основного приложения в разделе _providers_ прописать значение `Termiyanc\Moactiontest\MoactiontestServiceProvider::class`.
 
 После установки пакета необходимо выполнить команду `php artisan vendor:publish --provider=Termiyanc\Moactiontest\MoactiontestServiceProvider --force`,
 затем выполнить миграции пакета при помощи команды `php artisan migrate --path=database/termiyanc/moactiontest/migrations`.
