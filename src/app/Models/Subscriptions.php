@@ -16,6 +16,6 @@ class Subscriptions extends Model
      */
     public function SubscriptionsToUsers()
     {
-        return $this->hasMany(MoactiontestModels\Subscriptions::class, 'describe_id');
+        return $this->hasMany(MoactiontestModels\SubscriptionsToUser::class, 'subscription_id');
     }
 }
